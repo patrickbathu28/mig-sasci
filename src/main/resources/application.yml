@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: mig-sasci
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: mig-sasci
+  res:
+    defaultMediaType: application/json
+
+server:
+  port: 8082
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
