@@ -8,6 +8,7 @@ data class EnderecoDTO (
     var localidade : String? = null,
     var uf : String? = null,
     var ddd : String? = null,
-    var ibge : String? = null
+    var ibge : String? = null,
+    var imoveis : ImovelDTO? = null
 
 )

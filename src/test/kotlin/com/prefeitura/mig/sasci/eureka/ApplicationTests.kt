@@ -1,4 +1,4 @@
-package com.prefeitura.mig.sasci.eureka
+package com.prefeitura.msc.iptu.mig.msc.mig.sasci.eureka
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

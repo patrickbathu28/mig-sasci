@@ -1,5 +1,4 @@
 package com.prefeitura.mig.sasci.utils
-
 import com.fasterxml.jackson.core.JsonProcessingException
 import org.springframework.stereotype.Service
 import com.fasterxml.jackson.databind.ObjectMapper;

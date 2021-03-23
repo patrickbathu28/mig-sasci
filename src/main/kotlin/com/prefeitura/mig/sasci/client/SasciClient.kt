@@ -3,9 +3,7 @@ package com.prefeitura.mig.sasci.client
 import com.prefeitura.mig.sasci.dtos.CidadaoDTO
 import org.springframework.cloud.openfeign.FeignClient
 import org.springframework.http.MediaType
-import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
-import javax.ws.rs.PUT
 
 @FeignClient(name = "sasci", url = "https://livros-firebase-66a75.firebaseio.com")
 interface SasciClient {
