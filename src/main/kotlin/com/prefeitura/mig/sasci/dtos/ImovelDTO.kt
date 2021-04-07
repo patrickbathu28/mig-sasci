@@ -5,6 +5,7 @@ data class ImovelDTO (
     var areaTotalTerreno : Double? = null,
     var valorVenalTerreno : Double,
     var valorVenalConstrucao: Double,
-    var valorVenalImovel : Double
-
+    var valorVenalImovel : Double,
+    var tipoImposto: String? = null,
+    var valorImposto: Double? = null,
 )

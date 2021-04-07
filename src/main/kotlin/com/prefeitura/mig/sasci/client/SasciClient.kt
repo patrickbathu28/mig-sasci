@@ -8,20 +8,19 @@ import org.springframework.web.bind.annotation.*
 @FeignClient(name = "sasci", url = "https://livros-firebase-66a75.firebaseio.com")
 interface SasciClient {
 
-    @GetMapping(path = arrayOf("/sasci/cidadao/{id}.json"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
+    @GetMapping(path = ["/sasci/cidadao/{id}.json"], consumes= [MediaType.APPLICATION_JSON_VALUE])
     fun getCidadaoFindId(@PathVariable("id") id: String?): String?
 
-    @GetMapping(path = arrayOf("/sasci/cidadao/{id}.json"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
+    @GetMapping(path = ["/sasci/cidadao/{id}.json"], consumes= [MediaType.APPLICATION_JSON_VALUE])
     fun getCidadaoALL(): String?
 
-    @PostMapping(path = arrayOf("/sasci/cidadao.json"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
+    @PostMapping(path = ["/sasci/cidadao.json"], consumes= [MediaType.APPLICATION_JSON_VALUE])
     fun create(@RequestBody cidadao: CidadaoDTO): String?
 
-    @PutMapping(path = arrayOf("/sasci/cidadao/{id}.json"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
+    @PutMapping(path = ["/sasci/cidadao/{id}.json"], consumes= [MediaType.APPLICATION_JSON_VALUE])
     fun update(@RequestBody cidadao: CidadaoDTO, @PathVariable("id") id: String?): String?
 
-    @DeleteMapping(path = arrayOf("/sasci/cidadao/{id}.json"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
+    @DeleteMapping(path = ["/sasci/cidadao/{id}.json"], consumes= [MediaType.APPLICATION_JSON_VALUE])
     fun delete(@PathVariable("id") id: String?): String?
-
 
 }
