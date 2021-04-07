@@ -23,5 +23,4 @@ interface SasciClient {
     @DeleteMapping(path = arrayOf("/sasci/cidadao/{id}.json"), consumes= arrayOf(MediaType.APPLICATION_JSON_VALUE))
     fun delete(@PathVariable("id") id: String?): String?
 
-
 }

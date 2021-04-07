@@ -6,8 +6,22 @@ spring:
       host: localhost
       port: 27017
       database: mig-sasci
-  res:
-    defaultMediaType: application/json
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        default-requeue-rejected: false
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1000
+          multiplier: 2
+          max-interval: 5000
+        concurrency: 3
+        max-concurrency: 5
 
 server:
   port: 8082
